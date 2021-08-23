@@ -1,0 +1,182 @@
+/* .App {
+  text-align: center;
+  font-size: 70px;
+  font-family: Bold;
+  font-style: normal;
+} */
+.App {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  font-size: 50px;
+  font-family: Bold;
+  font-style: normal;
+  color: #f3f5f1;
+  font-family: Bold;
+  font-style: normal;
+}
+body {
+  background-color: #f7f7f7;
+  background-image: url("wallpaper.png");
+  background-size: cover;
+}
+.welcome {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 15%;
+  left: 42%;
+  text-align: center;
+  font-size: 50px;
+  font-family: Bold;
+  font-style: normal;
+  color: #8ae034;
+}
+.welcomePage {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  border-radius: 30px;
+  border: 1px solid rgb(222, 226, 235);
+  background-color: transparent;
+  top: 30%;
+  left: 5%;
+  width: 45%;
+  height: 50%;
+}
+.login_div{
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.name_input {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  border-radius: 20px;
+  top: 10%;
+  left: 5%;
+  width: 42.5%;
+  height: 20%;
+  border: 1px solid rgb(222, 226, 235);
+  background-color: rgba(255, 255, 255, .1);
+  
+}
+.branch {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  border-radius: 20px;
+  top: 10%;
+  left: 52.5%;
+  width: 42.5%;
+  height: 20%;
+  border: 1px solid rgb(222, 226, 235);
+}
+.rollno {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  border-radius: 20px;
+  top: 40%;
+  left: 5%;
+  width: 42.5%;
+  height: 20%;
+  border: 1px solid rgb(222, 226, 235);
+}
+.wa_number {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  border-radius: 20px;
+  top: 40%;
+  left: 52.5%;
+  width: 42.5%;
+  height: 20%;
+  border: 1px solid rgb(222, 226, 235);
+ 
+}
+.user_interest {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  border-radius: 20px;
+  top: 70%;
+  left: 5%;
+  width: 42.5%;
+  height: 20%;
+  border: 1px solid rgb(222, 226, 235);
+
+}
+.submit {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 75%;
+  left: 77.5%;
+  width: 15%;
+  height: 10%;
+  border-radius: 10px;
+  border: 1px solid rgb(109, 124, 160);
+ 
+}
+.button_data {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  font-size: 20px;
+  color: #ffffff;
+}
+.submit:hover {
+  background-color: #fd2424;
+}
+.user_interest:hover {
+  border: 1px solid rgb(91, 103, 119);
+}
+
+.name_input:hover {
+  border: 1px solid rgb(91, 103, 119);
+}
+.branch:hover {
+  border: 1px solid rgb(91, 103, 119);
+}
+.rollno:hover {
+  border: 1px solid rgb(91, 103, 119);
+}
+.wa_number:hover {
+  border: 1px solid rgb(91, 103, 119);
+}
+.name_label {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  color:white ;
+  top: 3%;
+  left: 5%;
+  height: 10%;
+  width: 100%;
+}
+.input_name {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  font-size: 25px;
+  top: 32%;
+  left: 5%;
+  height: 60%;
+  width: 90%;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  background:rgba(255, 255, 255, .1) ;
+}
+
+::placeholder { 
+  color: rgb(62, 236, 222);
+  opacity: 1; 
+}
