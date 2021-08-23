@@ -1,26 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Button from "@material-ui/core/button";
 import "./Home.css";
-import Select from "react-select";
+import ReportComboBox from "./Interest";
 
-const customStyles = {
-  control: (base) => ({
-    ...base,
-    height:  60,
-    width: 735,
-    backgroundColor:"transparent" ,
-    outline:"none" ,
-    border:0 ,
-    overflow:"hidden" ,
-    scrollY:"auto",
-  }),
-};
 const InterestOptions = [
   { value: "Web Development", label: "Web Development" },
   { value: "Machine Learning", label: "Machine Learning" },
-  { value: "Competitive Programming", label: "Compettive Programming" },
+  { value: "Competitive Programming", label: "Competitive Programming" },
   { value: "App development", label: "App development" },
-  { value: "Deep Learning", label: "Deep Learning" }
+  { value: "Deep Learning", label: "Deep Learning" },
 ];
 
 function Home() {
@@ -48,6 +36,10 @@ function Home() {
     event.preventDefault();
     localStorage.setItem("userData", JSON.stringify(loginData));
   };
+  const handleInterestChange=(obj)=>{
+    setInterest(obj) ;
+    console.log(obj) ;
+  }
 
   return (
     <div>
@@ -108,52 +100,24 @@ function Home() {
             placeholder="Ex: Web Development"
           >
             <label className="name_label">Area Of Interest</label>
-            <div className="input_name">
-              <Select
-                closeMenuOnSelect={false}
-                isMulti
-                options={InterestOptions}
-                styles={customStyles}
-                value={Interest}
-                name="Interest"
-                required
-                onChange={(obj) => {
-                  setInterest(obj);
-                }}
-                theme={(theme) => ({
-                  ...theme,
-                  borderRadius: 8,
-                  colors: {
-                    ...theme.colors,
-                    neutral0: "white",
-                    neutral50: "rgb(148, 3, 3)",
-                  },
-                })}
+            <div className="input_name ">
+              <ReportComboBox
+                optionGroups={InterestOptions}
+                onChange={handleInterestChange}
+                className="interest_select_div"
               />
             </div>
 
-            {/* <input
-              type="text"
-              className="input_name"
-              onChange={updateLoginData}
-              placeholder=""
-              name="Interest"
-              value={Interest}
-              required
-            ></input> */}
+            <Button
+              variant="contained"
+              color="primary"
+              type="submit"
+              className="submit"
+              disabled={false}
+            >
+              Submit
+            </Button>
           </div>
-          <Button
-            variant="contained"
-            size="large"
-            color="primary"
-            type="submit"
-            className="submit"
-            disabled={false}
-            // style={{ margin: 20 }}
-            style={{ Width: "30px", Height: "30px" }}
-          >
-            Submit
-          </Button>
         </div>
       </form>
     </div>

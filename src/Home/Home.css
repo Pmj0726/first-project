@@ -15,7 +15,7 @@
   font-size: 50px;
   font-family: Bold;
   font-style: normal;
-  color: #f3f5f1;
+  
   font-family: Bold;
   font-style: normal;
 }
@@ -42,11 +42,11 @@ body {
   position: absolute;
   border-radius: 30px;
   border: 1px solid rgb(222, 226, 235);
-  background-color: transparent;
+  background-color:transparent ;
   top: 30%;
   left: 5%;
   width: 45%;
-  height: 50%;
+  height: 58%;
 }
 .login_div{
   background-color: rgba(255, 255, 255, .1);
@@ -60,7 +60,7 @@ body {
   top: 10%;
   left: 5%;
   width: 42.5%;
-  height: 20%;
+  height: 15%;
   border: 1px solid rgb(222, 226, 235);
   background-color: rgba(255, 255, 255, .1);
   
@@ -73,7 +73,7 @@ body {
   top: 10%;
   left: 52.5%;
   width: 42.5%;
-  height: 20%;
+  height: 15%;
   border: 1px solid rgb(222, 226, 235);
 }
 .rollno {
@@ -81,10 +81,10 @@ body {
   flex-wrap: nowrap;
   position: absolute;
   border-radius: 20px;
-  top: 40%;
+  top: 35%;
   left: 5%;
   width: 42.5%;
-  height: 20%;
+  height: 15%;
   border: 1px solid rgb(222, 226, 235);
 }
 .wa_number {
@@ -92,10 +92,10 @@ body {
   flex-wrap: nowrap;
   position: absolute;
   border-radius: 20px;
-  top: 40%;
+  top: 35%;
   left: 52.5%;
   width: 42.5%;
-  height: 20%;
+  height: 15%;
   border: 1px solid rgb(222, 226, 235);
  
 }
@@ -104,24 +104,25 @@ body {
   flex-wrap: nowrap;
   position: absolute;
   border-radius: 20px;
-  top: 70%;
+  top: 60%;
   left: 5%;
   width: 90%;
-  height: 20%;
+  height: 15%;
   border: 1px solid rgb(222, 226, 235);
 
 }
 .submit {
-  display: flex;
   flex-wrap: nowrap;
   position: absolute;
-  top: 75%;
-  left: 77.5%;
-  width: 15%;
-  height: 10%;
-  border-radius: 10px;
-  border: 1px solid rgb(109, 124, 160);
- 
+  top: 130%;
+  left: 75.0%;
+  width: 25%;
+  height: 60px;
+  border-radius: 10px !important;
+  background-color:rgb(7, 63, 185) !important;
+}
+.interest_select{
+  overflow: scroll !important;
 }
 .button_data {
   display: flex;
