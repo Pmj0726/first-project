@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, Suspense } from "react";
+import React from "react";
 import Home from './Home/Home.js' ;
 import Card from './Card/Card' ;
 import Feedback from './Feedback/Feedback' ;
@@ -10,7 +10,6 @@ import {
   Switch,
 } from "react-router-dom";
 function App() {
-  const [count, setCount] = useState(0);
   return (
       <Router>
         <main>

@@ -22,7 +22,8 @@
 body {
   background-color: #f7f7f7;
   background-image: url("wallpaper.png");
-  background-size: cover;
+  /* background-si; */
+  background-repeat: no-repeat;
 }
 .welcome {
   display: flex;
@@ -180,3 +181,11 @@ body {
   color: rgb(62, 236, 222);
   opacity: 1; 
 }
+/* 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+} */
