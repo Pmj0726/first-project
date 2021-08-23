@@ -36,10 +36,10 @@ function Home() {
     event.preventDefault();
     localStorage.setItem("userData", JSON.stringify(loginData));
   };
-  const handleInterestChange=(obj)=>{
-    setInterest(obj) ;
-    console.log(obj) ;
-  }
+  const handleInterestChange = (obj) => {
+    setInterest(obj);
+    console.log(obj);
+  };
 
   return (
     <div>
