@@ -3,18 +3,24 @@ import Button from "@material-ui/core/button";
 import "./Home.css";
 import Select from "react-select";
 
-
 const customStyles = {
-  control: base => ({
+  control: (base) => ({
     ...base,
-    height: 60,
-    width:370 ,
-  })
+    height:  60,
+    width: 735,
+    backgroundColor:"transparent" ,
+    outline:"none" ,
+    border:0 ,
+    overflow:"hidden" ,
+    scrollY:"auto",
+  }),
 };
-const InterestOptions =[
-  { value: 'Web Development', label: 'Web Development' },
-  { value: 'Machine Learning', label: 'Machine Learning' },
-  { value: 'Compettive Programming', label: 'Compettive Programming' }
+const InterestOptions = [
+  { value: "Web Development", label: "Web Development" },
+  { value: "Machine Learning", label: "Machine Learning" },
+  { value: "Competitive Programming", label: "Compettive Programming" },
+  { value: "App development", label: "App development" },
+  { value: "Deep Learning", label: "Deep Learning" }
 ];
 
 function Home() {
@@ -24,7 +30,7 @@ function Home() {
     RollNumber: "",
     Whatsapp: "",
   });
-  const [Interest,setInterest]=useState() ;
+  const [Interest, setInterest] = useState();
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem("userData"));
     if (data) {
@@ -102,25 +108,30 @@ function Home() {
             placeholder="Ex: Web Development"
           >
             <label className="name_label">Area Of Interest</label>
-            <Select
-              closeMenuOnSelect={false}
-              isMulti
-              options={ InterestOptions}
-              styles={customStyles}
-              value={Interest}
-              name="Interest"
-              onChange={(obj)=>{
-                setInterest(obj) ;
-              }}
-              theme={(theme) => ({
-              ...theme,
-              borderRadius: 8,
-              colors: {
-                ...theme.colors,
-                neutral0: "white",
-                neutral50: "rgb(148, 3, 3)",
-              },})}
-            />
+            <div className="input_name">
+              <Select
+                closeMenuOnSelect={false}
+                isMulti
+                options={InterestOptions}
+                styles={customStyles}
+                value={Interest}
+                name="Interest"
+                required
+                onChange={(obj) => {
+                  setInterest(obj);
+                }}
+                theme={(theme) => ({
+                  ...theme,
+                  borderRadius: 8,
+                  colors: {
+                    ...theme.colors,
+                    neutral0: "white",
+                    neutral50: "rgb(148, 3, 3)",
+                  },
+                })}
+              />
+            </div>
+
             {/* <input
               type="text"
               className="input_name"
