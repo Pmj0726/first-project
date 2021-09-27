@@ -1,0 +1,72 @@
+[   {
+      "id": 1,
+      "name": "Leanne Graham",
+      "email": "Sincere@april.biz",
+      "description": "Hello I am Leanne Graham",
+      "phone": "8127392352",
+      "imgSrc":"",
+      "Interest":{
+          "Web":false ,
+          "App":true ,
+          "Ml":true ,
+          "Dl":true ,
+          "Cp":true 
+      }
+    },
+    {
+        "id": 2,
+        "name": "Leanne Graham",
+        "email": "Sincere@april.biz",
+        "description": "Hello I am Leanne Graham",
+        "phone": "8127392352",
+        "Interest":{
+            "Web":true ,
+            "App":true ,
+            "Ml":true ,
+            "Dl":true ,
+            "Cp":true 
+        }
+      },
+      {
+        "id": 3,
+        "name": "Leanne Graham",
+        "email": "Sincere@april.biz",
+        "description": "Hello I am Leanne Graham",
+        "phone": "8127392352",
+        "Interest":{
+            "Web":true ,
+            "App":true ,
+            "Ml":true ,
+            "Dl":true ,
+            "Cp":true 
+        }
+      },
+      {
+        "id": 4,
+        "name": "Leanne Graham",
+        "email": "Sincere@april.biz",
+        "description": "Hello I am Leanne Graham",
+        "phone": "8127392352",
+        "Interest":{
+            "Web":true ,
+            "App":true ,
+            "Ml":true ,
+            "Dl":true ,
+            "Cp":true 
+        }
+      },
+      {
+        "id": 5,
+        "name": "Leanne Graham",
+        "email": "Sincere@april.biz",
+        "description": "Hello I am Leanne Graham",
+        "phone": "8127392352",
+        "Interest":{
+            "Web":true ,
+            "App":true ,
+            "Ml":true ,
+            "Dl":true ,
+            "Cp":true 
+        }
+      }
+  ]
